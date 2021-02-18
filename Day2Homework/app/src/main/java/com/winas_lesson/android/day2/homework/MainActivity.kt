@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.viewbinding.ViewBinding
 import com.winas_lesson.android.day2.homework.databinding.ActivityMainBinding
-import com.winas_lesson.android.day2.sample.AbstractActivity
-import com.winas_lesson.android.day2.sample.ViewBindable
-import com.winas_lesson.android.day2.sample.showToast
+import com.winas_lesson.android.day2.homework.AbstractActivity
+import com.winas_lesson.android.day2.homework.ViewBindable
+import com.winas_lesson.android.day2.homework.showToast
 
 class MainActivity : AbstractActivity(), ViewBindable {
     override lateinit var binding: ViewBinding

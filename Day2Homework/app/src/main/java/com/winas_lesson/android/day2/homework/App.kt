@@ -1,4 +1,4 @@
-package com.winas_lesson.android.day2.sample
+package com.winas_lesson.android.day2.homework
 
 import android.app.Application
 import android.content.Context

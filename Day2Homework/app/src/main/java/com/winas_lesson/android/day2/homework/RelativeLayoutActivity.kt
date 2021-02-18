@@ -3,9 +3,9 @@ package com.winas_lesson.android.day2.homework
 import android.os.Bundle
 import androidx.viewbinding.ViewBinding
 import com.winas_lesson.android.day2.homework.databinding.RelativeLayoutActivityBinding
-import com.winas_lesson.android.day2.sample.AbstractActivity
-import com.winas_lesson.android.day2.sample.Content
-import com.winas_lesson.android.day2.sample.ViewBindable
+import com.winas_lesson.android.day2.homework.AbstractActivity
+import com.winas_lesson.android.day2.homework.Content
+import com.winas_lesson.android.day2.homework.ViewBindable
 
 class RelativeLayoutActivity: AbstractActivity(), ViewBindable {
     override lateinit var binding: ViewBinding
