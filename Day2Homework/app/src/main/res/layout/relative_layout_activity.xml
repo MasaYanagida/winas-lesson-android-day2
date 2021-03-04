@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="畠山富男"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="鳥取県 倉吉市 広瀬 1-7 広瀬ガーデン110" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="10dp"
+            android:text="新型コロナウイルス感染症のワクチン接種が17日、国内で始まった。第1例目の接種は東京都目黒区の国立病院機構東京医療センターで行われ、医師に米ファイザー製ワクチンが打たれた。政府は国立病院機構の施設など、まず全国100カ所の病院で同意を得た医療従事者4万人に先行接種して安全性を確かめる方針。流行収束に向けてワクチンの効果に期待が高まる"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="お気に入り♥登録する" />
+
+        <ImageView
+            android:id="@+id/ivFig"
+            android:layout_width="wrap_content"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/sample" />
+
+        <Button
+            android:id="@+id/btnImageChangeSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="画像📷拡大/縮小" />
+
+    </LinearLayout>
 
 </RelativeLayout>
