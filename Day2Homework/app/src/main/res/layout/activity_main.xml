@@ -7,15 +7,99 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<FrameLayout
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/winasBlue">
-        <View
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon"
+            />
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+            >
+        <TextView
+            android:id="@+id/text_name"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white"
-            android:layout_margin="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="aaaaaa" />
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/darker_gray"
+            android:text="address" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text = "説明"
+            />
+        <Button
+            android:id="@+id/button_favorite"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center|top"
+            android:background="@android:color/holo_red_dark"
+            android:text="お気に入り♥登録する"
+            android:textColor="@android:color/white"
+            />
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample"
+            />
+        <Button
+            android:id="@+id/toggle_button"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"
+            android:text="画像📷拡大/縮小"
+            android:textColor="@android:color/holo_red_dark"
+            />
+    </LinearLayout>
+    <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon"
             />
         <View
             android:layout_width="100dp"
@@ -24,7 +108,7 @@
             android:layout_gravity="left|center_vertical"
             android:layout_marginLeft="30dp"
             />
-    </FrameLayout>-->
+    </FrameLayout> -->
 
     <!--<LinearLayout
         android:layout_width="match_parent"
@@ -132,33 +216,7 @@
 
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="right|top"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/winasBlue"
-        android:text="Toggle"
-        android:textColor="@android:color/white"
-        />
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/sample"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="20dp"
-        android:textSize="18sp"
-        android:textColor="@color/winasBlue"
-        android:text="@string/sample_text"
-        />
+
+
+
 </LinearLayout>
